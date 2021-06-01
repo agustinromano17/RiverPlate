@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/fontello.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../assets/dist/css/bootstrapmodificado.css">
+  <link rel="shortcut icon" href="../img/logoriver.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100;1,200&display=swap" rel="stylesheet">
+ 
+  <title>Club Atlético River Plate</title>
+</head>
+<body>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  
+  <!-- Custom styles for this template -->
+  <link href="css/carousel.css" rel="stylesheet">
+</head>
+<body>
+<!--Boton Flotante Whatsapp-->
+<a href="https://api.whatsapp.com/send?phone=T=541147891200" class="btn-wsp" target="_blank" >
+  <i class="icon-whatsapp"></i>
+</a>
+<!--Boton Flotante Whatsapp-->
+
+ <!--Nav Bar--> 
+<header>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html"> <img src="../img/logoriver.png" width="100" height="100" alt="Logo"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Noticias.html">Noticias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Quienessomos.html">¿Quienes Somos?</a>
+        </li>
+        
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Club
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="Socios.html">Socios</a></li>
+            <li><a class="dropdown-item" href="SubPaginas/subgaleria.html">Galeria</a></li>
+            <li><a class="dropdown-item" href="SubPaginas/SubInformacion.html">Información</a></li>
+          </ul>
+        </div>
+      </ul>
+      
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+<!--Nav Bar-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Formulario-->
+<h1>Contacto</h1> 
+<div class="contenido  col-lg-4">  
+<form action="gracias_enviar.php" method="GET" enctype="application/x-www-form-urlencoded">
+
+  <label for="Nombre/s:">Nombre/s:</label><br>
+  <input type="text" name="Nombre"/><br>
+
+  <label for="Apellido:">Apellido:</label><br>
+  <input type="text" name="Apellido"/><br>
+
+  <label for="Edad:">Email:</label><br>
+  <select name="Edad:">
+      <option value="Hasta 12 Meses">Hasta 12 Meses</option>
+      <option value="De 1 a 18 años">De 1 a 18 años</option>
+      <option value="Mayor de 18 años">Mayor de 18 años</option>
+  </select>
+  <br>
+  <label for="Teléfono:">Teléfono:</label><br>
+  <input type="text" name="Teléfono:"/><br>
+
+  <label for="Nacionalidad">Nacionalidad:</label><br>
+  <input type="text" name="Nacionalidad:"/><br>
+
+  <label for="Domicilio">Domicilio:</label><br>
+  <input type="text" name="Domicilio:"/><br>
+  
+  <label for="Email:"> Email:</label><br>
+  <input type="email"/><br> 
+  <label for="Tipo de Socio:">Tipo de Socio:</label><br>
+  <select name="Tipo de Socio:">
+      <option value="Ninguno">Ninguno</option>
+      <option value="Socio">Socio</option>
+      <option value="Somos River">Somos River</option>
+      <option value="Socio Vitalicio">Socio Vitalicio</option>
+  </select>
+  <br> 
+  <br>
+ <label for="Sexo:">Sexo:</label><br>
+ <label for="Hombre">Hombre</label> <input type="radio" name="Sexo" value="Hombre">
+ <label for="Mujer">Mujer</label> <input type="radio" name="Sexo" value="Mujer">
+ <br>
+ <br>
+ <label for="Acerca de vos:">Acerca de vos: </label><br>
+ <textarea>
+
+ </textarea>> <br>
+ <br>
+ <label for="Acepta terminos y condiciones">Acepta terminos y condiciones</label>
+ <input type="checkbox" name="Acepta" value="1"> <br>
+ <br>
+ <input type="submit" value="Enviar Formulario">  <input type="reset" value="Borrar"/> <br>
+ </br>
+</form>
+</div>
+<!--Formulario-->
+  <br>
+  <br>
+  <br>
+  <!--Pie de Página-->
+<footer class="container centrar">
+  <img src="../img/whatsapp.png" width="23" height="23"><strong>  +54 11-4789-1200</strong> <strong class=""> <img src="../img/location2.png" width="23" height="23"> Av. Pres. Figueroa Alcorta 7597, C1428 CABA</strong>
+
+</footer>
+<!--Pie de Página-->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

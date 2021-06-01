@@ -1,0 +1,31 @@
+@import "estructura.scss";
+@import "tipografia.scss";
+@import "colores.scss";
+@import "variable.scss";
+@import "condicionales.scss";
+@import "bucles.scss";
+@import "maps.scss";
+@import "mixings.scss";
+
+ .btn-wsp {
+    position: fixed;
+    width: 55px;  
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(21, 253, 32, 0.808);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+ 
+ }
+ .btn-wsp:hover {
+    text-decoration: none;
+    color: rgba(21, 253, 32, 0.808);
+    background: #fff;
+ }
+ 

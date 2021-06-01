@@ -1,0 +1,14 @@
+/* Operaciones */
+$ancho: 720px;
+$black: #0000;
+$darkred: rgba(97, 8, 8, 0.753);
+
+.box_uno {
+         background-color: $black;
+          width: $ancho/2; /* Ancho de 360*/
+}
+.box_dos {
+            background-color: $darkred;
+             width: ($ancho/2)-50;
+}
+/* Operaciones */

@@ -1,0 +1,123 @@
+ /*GRID
+ .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+ 
+    grid-template-areas: "header header header"
+                         "contenido contenido contenido"
+                         "carrusel carrusel nada"
+                         "footer footer footer"
+ }
+ 
+ .contenedor > div,
+ .contenedor .header,
+ .contenedor .contenido,
+ .contenedor .sidebar,
+ .contenedor .footer {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+ }
+ .contenedor .header {
+    background-image: linear-gradient(black,rgb(51, 43, 43));
+    color: white;
+    grid-area: header;
+ }
+ 
+ .contenedor .contenido {
+    grid-area: contenido;
+ }
+ .contenedor .contenido .iframe{
+    grid-area: iframe;
+ }
+ 
+ .contenedor .sidebar {
+    grid-column: 3 / 4;
+    background-image: linear-gradient(black,rgb(51, 43, 43));
+    color: white;
+    text-align: center;
+    display: grid;
+    align-items: stretch;
+    justify-content: space-evenly;
+ 
+    grid-area: sidebar;
+ 
+ }
+ 
+ .contenedor .widget-1,
+ .contenedor .widget-2 {
+    height: 200px;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+ }
+ 
+ .contenedor .widget-1{
+    grid-area: widget-1;
+    background: none;
+ }
+ .contenedor .widget-2{
+    grid-area: widget-2;
+    background: none;
+ }
+ .contenedor .footer {
+    background: black;
+    color: white;
+    grid-area: footer;
+ }
+ .contenedor .carrusel {
+    background: none;
+    grid-area: carrusel;
+ }
+ GRID*/
+  /*Mobile*/
+  @media screen and (max-width: 1200px) {
+   body {
+      font-size: 14px;
+   }
+}
+@media screen and (max-width: 958px) {
+   .contenedor {
+      grid-template-areas: 
+      "header     header     header"
+      "contenido  contenido  contenido"
+      "carrusel   carrusel   widget"
+      "sidebar    sidebar    sidebar"
+      "footer     footer     footer";
+   }
+}
+    
+@media screen and (max-width: 768px) {
+   .contenedor {
+      grid-template-areas:
+      "header     header     header"
+      "contenido  contenido  contenido"
+      "carrusel   carrusel   ninguno"
+      "sidebar     sidebar   sidebar"
+      "footer     footer     footer";
+   }
+}
+@media screen and (max-width: 480px) {
+   .contenedor {
+      grid-template-areas:
+      "header     ninguno"
+      "contenido  ninguno"
+      "carrusel   ninguno"
+      "ninguno   ninguno"
+      "sidebar    ninguno"
+      "footer     ninguno";
+}
+   .contenedor header {
+      font-size: 14px;
+      justify-content: space-evenly;
+   }
+}
+/*Mobile*/

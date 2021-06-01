@@ -1,0 +1,92 @@
+@import "variable.scss";
+ html {
+    font-family: 'Montserrat', sans-serif;
+ 
+ }
+ h1.title {
+    font: $title-font; /* Uso la variable*/
+color: $cool-red;
+ }
+ /* CLASES BEM */
+.socios {
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+}
+.socios__rojo {
+    color: darkred;
+}
+.socios__grande {
+    font-size: 45px;
+}
+.socios__chico {
+    font-size: 25px;
+}
+.socios__centrado {
+    text-align: center;
+}
+.socios__izquierda {
+    text-align: left;
+}
+.socios__negrita {
+    font-weight: bolder;
+}
+.socios__gris {
+    color: grey;
+}
+.socios__subrayado {
+    text-decoration: underline;
+}
+/* CLASES BEM */
+ /*Clases Especificas*/
+ .centrar {
+    text-align: center; 
+ }
+ .izquierda {
+    text-align: left;
+ }
+ .derecha {
+    text-align: right;
+ }
+ .grueso {
+    font-weight: bolder;
+ }
+ .espacioPalabra {
+    word-spacing: 30px;
+ }
+ .colorNegro {
+       color: black;
+ }
+ .colorBlanco {
+       color:white
+ }
+ .bordeNegro {
+    border: 3px solid black;
+ }
+ .fondoCrema{
+    background-color: rgb(235, 229, 229);
+ }
+ .fondoNegro{
+    background-color: black;
+ }
+ .colorRoja {
+    color: red;
+ }
+ .colorGris{
+    color: grey;
+ }
+ .fondoGradientNegro {
+    background-image: linear-gradient(black,rgb(51, 43, 43))
+ }
+ .fondoGris{
+    background-color: rgb(114, 108, 108);
+ }
+ .letra15px{
+    font-size: 15px;
+ }
+
+ .palabrasIzquierda {
+    text-align: left;
+    justify-content: left;
+ 
+ }
+ /*Clases Especificas*/

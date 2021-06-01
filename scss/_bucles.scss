@@ -1,0 +1,8 @@
+
+/* Each */
+@for $i from 1 through 10 {
+    .caja-#{$i} {
+        width: $i *10%;
+    }
+}
+/* Each */

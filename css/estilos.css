@@ -1,0 +1,218 @@
+*{
+   margin: 0;
+   padding: 0;
+
+}
+
+body{
+   background: rgb(102, 100, 100) ;
+   color: #000;
+   font-family: 'Montserrat', sans-serif;
+}
+
+html {
+   font-family: 'Montserrat', sans-serif;
+
+}
+
+.contenedor {
+   width: 90%;
+   max-width: 1000px;
+   margin: 20px auto;
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4, auto);
+
+   grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "carrusel carrusel nada"
+                        "footer footer footer"
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+   background: white;
+   padding: 20px;
+   border-radius: 4px;
+}
+.contenedor .header {
+   background-image: linear-gradient(black,rgb(51, 43, 43));
+   color: white;
+   grid-area: header;
+}
+
+.contenedor .contenido {
+   grid-area: contenido;
+}
+.contenedor .contenido .iframe{
+   grid-area: iframe;
+}
+
+.contenedor .sidebar {
+   grid-column: 3 / 4;
+   background-image: linear-gradient(black,rgb(51, 43, 43));
+   color: white;
+   text-align: center;
+   display: grid;
+   align-items: stretch;
+   justify-content: space-evenly;
+
+   grid-area: sidebar;
+
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+   height: 200px;
+   width: 320px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.contenedor .widget-1{
+   grid-area: widget-1;
+   background: none;
+}
+.contenedor .widget-2{
+   grid-area: widget-2;
+   background: none;
+}
+.contenedor .footer {
+   background: black;
+   color: white;
+   grid-area: footer;
+}
+.contenedor .carrusel {
+   background: none;
+   grid-area: carrusel;
+}
+/*Mobile*/
+@media screen and (max-width: 1200px) {
+   body {
+      font-size: 14px;
+   }
+}
+@media screen and (max-width: 958px) {
+   .contenedor {
+      grid-template-areas: 
+      "header     header     header"
+      "contenido  contenido  contenido"
+      "carrusel   carrusel   widget"
+      "sidebar    sidebar    sidebar"
+      "footer     footer     footer";
+   }
+}
+    
+@media screen and (max-width: 768px) {
+   .contenedor {
+      grid-template-areas:
+      "header     header     header"
+      "contenido  contenido  contenido"
+      "carrusel   carrusel   ninguno"
+      "sidebar     sidebar   sidebar"
+      "footer     footer     footer";
+   }
+}
+@media screen and (max-width: 480px) {
+   .contenedor {
+      grid-template-areas:
+      "header     ninguno"
+      "contenido  ninguno"
+      "carrusel   ninguno"
+      "ninguno   ninguno"
+      "sidebar    ninguno"
+      "footer     ninguno";
+}
+   .contenedor header {
+      font-size: 14px;
+      justify-content: space-evenly;
+   }
+}
+/*Mobile*/
+.btn-wsp {
+   position: fixed;
+   width: 55px;  
+   height: 55px;
+   line-height: 55px;
+   bottom: 30px;
+   right: 30px;
+   background: rgba(21, 253, 32, 0.808);
+   color: #fff;
+   border-radius: 50px;
+   text-align: center;
+   font-size: 30px;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+   z-index: 100;
+
+}
+.btn-wsp:hover {
+   text-decoration: none;
+   color: rgba(21, 253, 32, 0.808);
+   background: #fff;
+}
+
+/*Clases Especificas*/
+.centrar {
+   text-align: center; 
+}
+.izquierda {
+   text-align: left;
+}
+.derecha {
+   text-align: right;
+}
+.grueso {
+   font-weight: bolder;
+}
+.espacioPalabra {
+   word-spacing: 30px;
+}
+.colorNegro {
+      color: black;
+}
+.colorBlanco {
+      color:white
+}
+.bordeNegro {
+   border: 3px solid black;
+}
+.fondoCrema{
+   background-color: rgb(235, 229, 229);
+}
+.fondoNegro{
+   background-color: black;
+}
+.colorRoja {
+   color: red;
+}
+.colorGris{
+   color: grey;
+}
+.fondoGradientNegro {
+   background-image: linear-gradient(black,rgb(51, 43, 43))
+}
+.fondoGris{
+   background-color: rgb(114, 108, 108);
+}
+.letra15px{
+   font-size: 15px;
+}
+.col4Editado {
+   align-items: center;
+   justify-content: left;
+   align-content: center;
+   text-align: start;
+}
+.palabrasIzquierda {
+   text-align: left;
+   justify-content: left;
+
+}
+/*Clases Especificas*/
