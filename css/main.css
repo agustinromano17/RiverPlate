@@ -138,6 +138,9 @@ h1.title {
 
 /* CLASES BEM */
 /*Clases Especificas*/
+.montserrat {
+  font-family: 'Montserrat', sans-serif; }
+
 .centrar {
   text-align: center; }
 
@@ -164,6 +167,9 @@ h1.title {
 
 .fondoCrema {
   background-color: #ebe5e5; }
+
+.fondoBlanco {
+  background-color: white; }
 
 .fondoNegro {
   background-color: black; }

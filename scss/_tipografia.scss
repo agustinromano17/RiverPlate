@@ -1,8 +1,8 @@
 @import "variable.scss";
- html {
-    font-family: 'Montserrat', sans-serif;
+html {
+   font-family: 'Montserrat', sans-serif;
 
- }
+}
  h1.title {
     font: $title-font; /* Uso la variable*/
 color: $cool-red;
@@ -38,6 +38,10 @@ color: $cool-red;
 }
 /* CLASES BEM */
  /*Clases Especificas*/
+.montserrat {
+   font-family: 'Montserrat', sans-serif;
+}
+
  .centrar {
     text-align: center; 
  }
@@ -65,6 +69,10 @@ color: $cool-red;
  .fondoCrema{
     background-color: rgb(235, 229, 229);
  }
+ .fondoBlanco {
+    background-color: white;
+ }
+ 
  .fondoNegro{
     background-color: black;
  }
